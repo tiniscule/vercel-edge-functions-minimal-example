@@ -4,6 +4,7 @@ import Link from 'next/link'
 import LogoutButton from '../components/LogoutButton'
 import SupabaseLogo from '../components/SupabaseLogo'
 import NextJsLogo from '../components/NextJsLogo'
+import EdgeInfo from '@/components/EdgeInfo'
 
 const resources = [
   {
@@ -70,6 +71,7 @@ export default async function Index() {
 
       <div className="animate-in flex flex-col gap-14 opacity-0 max-w-4xl px-3 py-16 lg:py-24 text-foreground">
         <div className="flex flex-col items-center mb-4 lg:mb-12">
+          <EdgeInfo />
           <div className="flex gap-8 justify-center items-center">
             <Link href="https://supabase.com/" target="_blank">
               <SupabaseLogo />
